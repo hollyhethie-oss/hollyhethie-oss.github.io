@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Intake Drop-off — Holly Hetherington</title>
+  <meta name="description" content="How I reduced AI therapy intake drop-off from 25% to ~5% at Spring Health through research and content strategy.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-name">Holly Hetherington</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#work">Work</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="case-header">
+    <a href="../index.html" class="back-link">← All work</a>
+    <div class="card-tags" style="margin-bottom:1rem">
+      <span class="tag">AI · UX writing</span>
+      <span class="tag-gray tag">Spring Health · 2024</span>
+    </div>
+    <h1>Reducing AI intake drop-off by 20 points</h1>
+    <p class="case-header-sub">A little context goes a long way.</p>
+    <div class="case-meta">
+      <span>Role: UX writer (sole)</span>
+      <span>Methods: Unmoderated usability study, think-aloud</span>
+      <span>Tools: Dscout, Figma</span>
+    </div>
+  </div>
+
+  <div class="case-body">
+
+    <h3>Context</h3>
+    <p>Spring Health is a mental health platform that connects members with therapists, gives providers tools to deliver care, and helps employers understand workforce mental health outcomes.</p>
+    <p>When a member books their first therapy session, providers need background on what's bringing them in. Historically this meant a questionnaire completed in the first appointment — valuable information, but it ate into the time members could spend on actual care.</p>
+    <p>The AI product team built a solution: a chatbot that walks members through intake questions before the first session, so providers can spend less time on administration and more time on care.</p>
+
+    <h3>The problem</h3>
+    <p>When the chatbot was piloted, the drop-off numbers were striking. <strong>25% of users abandoned at the disclaimer screen</strong>, and <strong>32% dropped off at the welcome message</strong> — before ever answering a single question.</p>
+    <p>This told me the issue wasn't the chatbot itself. Users were leaving before they'd even engaged with it. Something earlier in the experience was causing hesitation.</p>
+
+    <h3>My hypothesis</h3>
+    <p>Both entry points to the chatbot — from the homepage and from the post-booking confirmation — offered almost no context about what users were about to do. They clicked a button and suddenly found themselves in a chat interface with an AI, with no explanation of why, what it would ask, or where their answers would go.</p>
+
+    <div class="callout">
+      <p><strong>Hypothesis:</strong> The lack of context on the entry points was creating an expectation gap — users expected a form or a human-led intake, and got a chatbot instead. That surprise was driving abandonment.</p>
+    </div>
+
+    <h3>Research</h3>
+    <p>To validate this, I initiated and ran a quick unmoderated usability study through Dscout.</p>
+
+    <div class="two-col">
+      <div class="two-col-item">
+        <h4>Study design</h4>
+        <ul>
+          <li>9 participants, lookalike member personas</li>
+          <li>Unmoderated, static screens + think-aloud</li>
+          <li>Covered: entry point → disclaimer → chat</li>
+          <li>Focus: expectation-setting and trust signals</li>
+        </ul>
+      </div>
+      <div class="two-col-item">
+        <h4>Key questions</h4>
+        <ul>
+          <li>What do users expect when they click "Get started"?</li>
+          <li>What creates hesitation at the disclaimer?</li>
+          <li>What would make them feel comfortable continuing?</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>The feedback confirmed the hypothesis. Users expected a form or a human-led intake. They encountered a chatbot — with AI disclosed only after they'd already committed to starting. The purpose was unclear, and the disclaimer felt alarming rather than reassuring.</p>
+
+    <div class="pull-quote">
+      "What does AI have to do with this process?"
+      <cite>— Research participant P4</cite>
+    </div>
+
+    <h3>Strategy</h3>
+    <p>Working with the designer and PM, I developed a content strategy built around one principle: <strong>design for the most hesitant user.</strong></p>
+
+    <div class="two-col">
+      <div class="two-col-item">
+        <h4>What the research told us</h4>
+        <ul>
+          <li>Users expected a form, not a chatbot</li>
+          <li>AI use created confusion and concern</li>
+          <li>Lack of clarity caused hesitation at disclaimer</li>
+        </ul>
+      </div>
+      <div class="two-col-item">
+        <h4>UX principles we set</h4>
+        <ul>
+          <li>Set expectations early</li>
+          <li>Explain the "why" behind AI use</li>
+          <li>Reinforce trust through transparency</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>What changed</h3>
+    <p>On the <strong>homepage entry point</strong>, I rewrote the card to explain what users were about to do, why it benefits them, and that their answers are confidential. I also added an AI icon to the CTA button so the format wasn't a surprise.</p>
+    <p>On the <strong>post-booking entry point</strong>, space was more constrained, so I prioritized expectation-setting — since the first message from the bot itself covers the purpose and confidentiality.</p>
+    <p>New homepage CTA copy: <em>"Save time in session by answering AI-guided questions now — everything you share is confidential."</em></p>
+
+    <h3>Impact</h3>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <span class="impact-number">~5%</span>
+        <span class="impact-label">drop-off at disclaimer<br>(down from 25%)</span>
+      </div>
+      <div class="impact-card">
+        <span class="impact-number">~75%</span>
+        <span class="impact-label">of members completed intake</span>
+      </div>
+      <div class="impact-card">
+        <span class="impact-number">90%+</span>
+        <span class="impact-label">positive feedback post-submission</span>
+      </div>
+    </div>
+
+    <p>By driving this project myself, I also freed up PM and designer bandwidth to stay focused on roadmap work — a pattern I try to establish wherever I'm the sole content person on a team.</p>
+
+    <h3>My contributions</h3>
+    <p>Initiated and conducted the usability research · Synthesized findings and developed content strategy · Proposed and wrote the updated entry point copy · Recommended the addition of an AI icon to the CTA · Presented recommendations to PM and designer</p>
+
+  </div>
+
+  <div style="padding: 3rem 0; border-top: 0.5px solid var(--border-light); margin-top: 3rem;">
+    <a href="suicide-prevention.html" class="btn">Next case study →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>Holly Hetherington · Seattle, WA</p>
+</footer>
+
+</body>
+</html>
