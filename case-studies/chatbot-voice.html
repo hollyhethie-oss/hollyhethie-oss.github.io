@@ -46,6 +46,14 @@
     <div class="callout">
       <p><strong>The problem:</strong> We weren't just building a chatbot. We were stitching together eight different personalities into a single experience. Members encountered an inconsistent voice — sometimes warm and supportive, sometimes transactional and robotic — with no unified sense of who they were talking to.</p>
     </div>
+    <figure style="margin: 1.5rem 0;">
+      <img src="../images/Botvisuals.jpg" alt="Spring Health Guide chatbot interface showing the member-facing experience" style="width:100%;border-radius:var(--radius-lg);border:0.5px solid var(--border);">
+      <figcaption style="font-size:12px;color:var(--ink-lighter);margin-top:0.5rem;">The Guide chatbot interface members interact with across their care journey</figcaption>
+    </figure>
+    <figure style="margin: 1.5rem 0;">
+      <img src="../images/Botbackend.jpg" alt="Backend architecture showing the eight task agents that make up Guide" style="width:100%;border-radius:var(--radius-lg);border:0.5px solid var(--border);">
+      <figcaption style="font-size:12px;color:var(--ink-lighter);margin-top:0.5rem;">The eight independently-designed task agents behind Guide</figcaption>
+    </figure>
 
     <h3>Turning personality into a product decision</h3>
     <p>The team had intuitions about what the bot should feel like, but "warm" and "trustworthy" aren't testable. I needed to make personality concrete enough to evaluate.</p>
@@ -82,6 +90,10 @@
     <p>Multiple prompts meant fragmented tone. There was no systematic way to evaluate whether a bot response was actually on-voice, and no safeguard against the bot drifting over time as prompts were updated.</p>
     <p>I built a solution: a voice and tone rubric tailored specifically to the chatbot's personality, designed to be operational rather than descriptive. Rather than telling engineers "be warm," the rubric defined measurable dimensions — naturalness, emotional attunement, appropriate pacing — with a scoring scale, clear criteria, and concrete examples of responses that succeeded or failed on each dimension.</p>
     <p>The rubric was integrated into LangSmith as an automated evaluation judge, so every response could be scored against the defined voice as part of the development and testing pipeline.</p>
+    <figure style="margin: 1.5rem 0;">
+      <img src="../images/Botvoicerubric.jpg" alt="Voice and tone rubric showing scoring dimensions and criteria" style="width:100%;border-radius:var(--radius-lg);border:0.5px solid var(--border);">
+      <figcaption style="font-size:12px;color:var(--ink-lighter);margin-top:0.5rem;">The voice/tone rubric — designed to be operational, not just descriptive</figcaption>
+    </figure>
 
     <h3>My contributions</h3>
     <p>Created and defined the bot persona prototypes · Led and conducted the concept testing research · Worked with stakeholders to establish voice and experience principles · Developed the final bot voice and tone documentation · Created the scoring rubric · Tested and refined the rubric against sample conversations · Partnered with engineering to integrate rubric into LangSmith</p>
