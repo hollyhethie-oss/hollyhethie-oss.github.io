@@ -43,9 +43,14 @@
     <p>Spring Health was building Guide — a chatbot designed to help members with anything related to their mental health care, from finding a therapist to navigating difficult emotions between sessions. The vision was ambitious: one conversational interface across the entire member journey.</p>
     <p>Under the hood, Guide was built on eight independently-designed task agents, each created for a specific purpose — onboarding, intake, session summaries, care navigation, and more. Each had been built separately, with its own tone and interaction style.</p>
 
+    <h3>Impact</h3>
+    <p>I turned an abstract question about chatbot personality into a validated product decision, then built the systems to maintain it at scale — giving the engineering team a measurable, automated way to evaluate voice consistency across every bot response.</p>
     <div class="callout">
-      <p><strong>The problem:</strong> We weren't just building a chatbot. We were stitching together eight different personalities into a single experience. Members encountered an inconsistent voice — sometimes warm and supportive, sometimes transactional and robotic — with no unified sense of who they were talking to.</p>
+      <p><strong>Note:</strong> Outcome metrics for Guide are still being collected as the product rolls out. This case study reflects the research and systems work completed through early 2025.</p>
     </div>
+
+    <h3>The problem</h3>
+    <p>We weren't just building a chatbot. We were stitching together eight different personalities into a single experience. Members encountered an inconsistent voice — sometimes warm and supportive, sometimes transactional and robotic — with no unified sense of who they were talking to.</p>
     <figure style="margin: 1.5rem 0;">
       <img src="../images/Guide.jpg" alt="Spring Health Guide chatbot interface showing the member-facing experience" style="width:100%;border-radius:var(--radius-lg);border:0.5px solid var(--border);">
       <figcaption style="font-size:12px;color:var(--ink-lighter);margin-top:0.5rem;">The Guide chatbot interface members interact with across their care journey</figcaption>
@@ -55,19 +60,16 @@
       <figcaption style="font-size:12px;color:var(--ink-lighter);margin-top:0.5rem;">The eight independently-designed task agents behind Guide</figcaption>
     </figure>
 
-    <h3>Turning personality into a product decision</h3>
+    <h3>Research</h3>
     <p>The team had intuitions about what the bot should feel like, but "warm" and "trustworthy" aren't testable. I needed to make personality concrete enough to evaluate.</p>
-    <p>I developed three distinct voice prototypes, each grounded in a fictional character simile that captured a different tone — one urgent and direct, one gentle and exploratory, one warm and grounded. Each simile came with a defined voice, tone, and example conversation.</p>
-    <p>I then ran a concept test with member lookalikes using a prototype chatbot, testing the three personalities across different member scenarios and needs.</p>
-
-    <h3>What we learned</h3>
+    <p>I developed three distinct voice prototypes, each grounded in a fictional character simile that captured a different tone — one urgent and direct, one gentle and exploratory, one warm and grounded. Each simile came with a defined voice, tone, and example conversation. I then ran a concept test with member lookalikes using a prototype chatbot.</p>
 
     <div class="two-col">
       <div class="two-col-item">
         <h4>On personality preference</h4>
         <ul>
           <li>Users preferred a single default personality over choosing their own</li>
-          <li>Personality preference shifted depending on the context and emotional need</li>
+          <li>Personality preference shifted depending on context and emotional need</li>
           <li>A warm, grounded voice worked best across the widest range of scenarios</li>
         </ul>
       </div>
@@ -76,19 +78,18 @@
         <ul>
           <li>How the bot communicates matters more than its name or visual design</li>
           <li>Warmth needs to be genuine — overly sentimental language backfires</li>
-          <li>Users responded most strongly to feeling genuinely heard before being helped</li>
+          <li>Users responded most strongly to feeling heard before being helped</li>
         </ul>
       </div>
     </div>
 
-    <h3>Core product decisions</h3>
+    <h3>Strategy</h3>
     <p>This research gave us a clear, validated direction. We selected a default chatbot personality — warm, grounded, emotionally intelligent — and anchored our design priorities around conversation quality rather than surface-level branding choices like naming or visual character design.</p>
     <p>I documented voice principles specific to conversational AI experiences, including how to handle the full range of emotional states members might be in — from routine scheduling to moments of real vulnerability.</p>
 
-    <h3>Scaling voice consistency</h3>
+    <h3>What changed</h3>
     <p>With a defined personality, a new challenge emerged: how do you maintain consistency across eight separate task agents, each with their own prompt engineering?</p>
-    <p>Multiple prompts meant fragmented tone. There was no systematic way to evaluate whether a bot response was actually on-voice, and no safeguard against the bot drifting over time as prompts were updated.</p>
-    <p>I built a solution: a voice and tone rubric tailored specifically to the chatbot's personality, designed to be operational rather than descriptive. Rather than telling engineers "be warm," the rubric defined measurable dimensions — naturalness, emotional attunement, appropriate pacing — with a scoring scale, clear criteria, and concrete examples of responses that succeeded or failed on each dimension.</p>
+    <p>I built a voice and tone rubric tailored specifically to the chatbot's personality, designed to be operational rather than descriptive. Rather than telling engineers "be warm," the rubric defined measurable dimensions — naturalness, emotional attunement, appropriate pacing — with a scoring scale, clear criteria, and concrete examples.</p>
     <p>The rubric was integrated into LangSmith as an automated evaluation judge, so every response could be scored against the defined voice as part of the development and testing pipeline.</p>
     <figure style="margin: 1.5rem 0;">
       <img src="../images/Botvoicerubric.jpg" alt="Voice and tone rubric showing scoring dimensions and criteria" style="width:100%;border-radius:var(--radius-lg);border:0.5px solid var(--border);">
@@ -97,10 +98,6 @@
 
     <h3>My contributions</h3>
     <p>Created and defined the bot persona prototypes · Led and conducted the concept testing research · Worked with stakeholders to establish voice and experience principles · Developed the final bot voice and tone documentation · Created the scoring rubric · Tested and refined the rubric against sample conversations · Partnered with engineering to integrate rubric into LangSmith</p>
-
-    <div class="callout" style="margin-top:2rem">
-      <p><strong>Note:</strong> Impact metrics for Guide are still being collected as the product rolls out. This case study reflects the research and systems work completed through early 2025.</p>
-    </div>
 
   </div>
 
