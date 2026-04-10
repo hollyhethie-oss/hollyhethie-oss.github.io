@@ -76,7 +76,7 @@ nav {
 
 /* ── Sections ── */
 section {
-  padding: 4rem 0;
+  padding: 2rem 0;
   border-bottom: 0.5px solid var(--border-light);
 }
 section:last-of-type { border-bottom: none; }
