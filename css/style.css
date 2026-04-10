@@ -187,20 +187,27 @@ section:last-of-type { border-bottom: none; }
 
 /* ── Card thumbnail ── */
 .card-thumb {
-  width: 140px;
-  min-width: 140px;
-  height: 100px;
+  width: 160px;
+  min-width: 160px;
+  height: 120px;
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--sage-light);
   border: 0.5px solid var(--border);
-  margin-right: 1.25rem;
+  margin-right: 1.5rem;
+  align-self: center;
 }
 .card-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+}
+.card-thumb.thumb-top img {
   object-position: top;
+}
+.card-thumb.thumb-center img {
+  object-position: center;
 }
 
 /* ── Case study cards ── */
