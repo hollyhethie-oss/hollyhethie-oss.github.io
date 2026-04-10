@@ -89,7 +89,7 @@ section:last-of-type { border-bottom: none; }
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   margin-bottom: 1.25rem;
 }
 .hero h1 {
@@ -151,7 +151,7 @@ section:last-of-type { border-bottom: none; }
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   margin-bottom: 1rem;
 }
 .logo-strip {
@@ -161,15 +161,15 @@ section:last-of-type { border-bottom: none; }
 }
 .logo-pill::after {
   content: ' · ';
-  color: var(--ink-lighter);
+  color: var(--ink-light);
 }
 .logo-pill:last-child::after {
   content: '';
 }
 .logo-pill {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   background: none;
   border: none;
   padding: 0;
@@ -181,7 +181,7 @@ section:last-of-type { border-bottom: none; }
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   margin-bottom: 2rem;
 }
 
@@ -237,12 +237,12 @@ section:last-of-type { border-bottom: none; }
   max-width: 580px;
 }
 .card-meta-row {
-  font-size: 12px;
-  color: var(--ink-lighter);
+  font-size: 14px;
+  color: var(--ink-light);
 }
 .card-arrow {
   font-size: 18px;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   margin-top: 0.25rem;
   transition: transform 0.15s, color 0.15s;
 }
@@ -295,7 +295,7 @@ section:last-of-type { border-bottom: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   font-size: 13px;
 }
 .about-photo img {
@@ -320,7 +320,7 @@ section:last-of-type { border-bottom: none; }
   font-weight: 500;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   margin-bottom: 0.25rem;
 }
 .skill-block p {
@@ -344,8 +344,8 @@ footer {
   padding: 1.5rem 2rem;
   border-top: 0.5px solid var(--border-light);
   text-align: center;
-  font-size: 12px;
-  color: var(--ink-lighter);
+  font-size: 14px;
+  color: var(--ink-light);
 }
 
 /* ── Case study pages ── */
@@ -356,7 +356,7 @@ footer {
 }
 .back-link {
   font-size: 13px;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -385,7 +385,7 @@ footer {
   gap: 1.5rem;
   flex-wrap: wrap;
   font-size: 13px;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
 }
 .case-meta span { display: flex; align-items: center; gap: 0.3rem; }
 
@@ -402,7 +402,7 @@ footer {
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   margin: 2rem 0 0.75rem;
 }
 .case-body p {
@@ -439,7 +439,7 @@ footer {
   display: block;
   font-size: 13px;
   font-style: normal;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   margin-top: 0.5rem;
   font-family: var(--font-sans);
 }
@@ -468,8 +468,8 @@ footer {
   margin-bottom: 0.25rem;
 }
 .impact-label {
-  font-size: 12px;
-  color: var(--ink-lighter);
+  font-size: 14px;
+  color: var(--ink-light);
   line-height: 1.4;
 }
 
@@ -501,8 +501,8 @@ footer {
   content: '—';
   position: absolute;
   left: 0;
-  color: var(--ink-lighter);
-  font-size: 12px;
+  color: var(--ink-light);
+  font-size: 14px;
 }
 
 /* ── Step flow ── */
@@ -525,7 +525,7 @@ footer {
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.08em;
-  color: var(--ink-lighter);
+  color: var(--ink-light);
   margin-bottom: 0.4rem;
 }
 .step-title {
@@ -534,7 +534,7 @@ footer {
   font-weight: 400;
   margin-bottom: 0.4rem;
 }
-.step p { font-size: 12px; color: var(--ink-light); line-height: 1.5; margin: 0; }
+.step p { font-size: 14px; color: var(--ink-light); line-height: 1.5; margin: 0; }
 
 /* ── Responsive ── */
 @media (max-width: 680px) {
