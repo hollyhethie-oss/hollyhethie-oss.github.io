@@ -206,7 +206,7 @@ section:last-of-type { border-bottom: none; }
   object-position: top;
 }
 .card-thumb.thumb-top img {
-  object-position: top;
+  object-position: 0% 30%;
 }
 .card-thumb.thumb-center img {
   object-fit: contain;
