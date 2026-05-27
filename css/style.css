@@ -214,7 +214,7 @@ section:last-of-type { border-bottom: none; }
 .card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   display: block;
 }
@@ -316,7 +316,7 @@ section:last-of-type { border-bottom: none; }
 .about-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .skills-grid {
   display: grid;
