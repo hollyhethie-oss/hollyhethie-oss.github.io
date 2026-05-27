@@ -562,3 +562,4 @@ footer {
   .page { padding: 0 1rem; }
   .card-image { height: 180px; }
 }
+.img-contain img { object-fit: contain; background: var(--sage-light); }
