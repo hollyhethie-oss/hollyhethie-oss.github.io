@@ -224,12 +224,13 @@ section:last-of-type { border-bottom: none; }
 
 /* ── Homepage cards: show full image, no crop ── */
 #work .card-image {
-  height: auto;
-  overflow: visible;
+  height: 320px;
+  overflow: hidden;
 }
 #work .card-image img {
-  height: auto;
-  object-fit: unset;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* ── Card body ── */
